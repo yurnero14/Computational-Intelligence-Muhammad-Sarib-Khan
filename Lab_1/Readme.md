@@ -17,24 +17,43 @@ The approach is similar to BFS, but in priority function length of the state has
 <h2> Results </h2>
 <h3>DFS</h3>
 N = 5
+
 Found a solution in 3 steps; The number of visited states: 16 
+
 N = 10
+
 Found a solution in 5 steps; The number of visited states: 96 
+
 N = 20
+
 Found a solution in 7 steps; The number of visited states: 129 
+
 N = 100
+
 Found a solution in 10 steps; The number of visited states: 3,072 
+
 N = 500
+
 Found a solution in 14 steps; The number of visited states: 21,311 
+
 N = 1000
+
 Solution not found for 1000
 
 <h3>BFS</h3>
+
 N = 5
+
 Found a solution in 3 steps; The number of visited states: 32
+
 N = 10
+
 Found a solution in 3 steps; The number of visited states: 706
+
 N = 20
+
 Found a solution in 4 steps; The number of visited states: 15,790
+
 N = 100
+
 SOlution not found for 100 above
