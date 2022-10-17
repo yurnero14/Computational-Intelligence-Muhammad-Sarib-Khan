@@ -115,29 +115,29 @@ def result(state, action):
     return state | action
 
 # 'Breadth First'
-#logging.getLogger().setLevel(logging.INFO)
-#for N in [5, 10, 20, 100, 500, 1000]:
- #   parent_state = dict()
- #   state_cost = dict()
-  #  GOAL = State(set(range(N)))
-   # P = problem(N, seed=42)
+logging.getLogger().setLevel(logging.INFO)
+for N in [5, 10, 20, 100, 500, 1000]:
+    parent_state = dict()
+    state_cost = dict()
+    GOAL = State(set(range(N)))
+    P = problem(N, seed=42)
 
 
-  #  def h(state):
-   #     return len(state)
+    def h(state):
+        return len(state)
 
 
-    #INITIAL_STATE = State(set())
-    #logging.info(f'N = {N}')
-    #final = search(
-     #   INITIAL_STATE,
-      #  goal_test=goal_test,
-       # parent_state=parent_state,
-        #state_cost=state_cost,
-        #priority_function=lambda s: h(s),
-        #unit_cost=lambda a: 1,
-    #)
-    #logging.debug(final)
+    INITIAL_STATE = State(set())
+    logging.info(f'N = {N}')
+    final = search(
+        INITIAL_STATE,
+        goal_test=goal_test,
+        parent_state=parent_state,
+        state_cost=state_cost,
+        priority_function=lambda s: h(s),
+        unit_cost=lambda a: 1,
+    )
+    logging.debug(final)
 
 # 'DEPTH FIRST
 logging.getLogger().setLevel(logging.INFO)
